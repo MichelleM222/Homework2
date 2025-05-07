@@ -1,0 +1,156 @@
+/* Fuente y fondo general */
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    background-color: #fff0f5; /* lavanda claro */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #b43d6a; /* rosa fuerte */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Navegación */
+nav {
+    background-color: #eb9ba8; /* rosa claro */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #8b1554;
+}
+
+/* Banner de imagen horizontal */
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    max-height: 300px;
+    border-bottom: 4px solid #b45374;
+}
+
+/* Contenido principal */
+main {
+    background-color: #ffffff;
+    padding: 30px;
+    font-size: 18px;
+    min-height: 400px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #b45374;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Encabezados */
+h1 {
+    font-family: 'Georgia', serif;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    color: #c71585;
+}
+
+h3 {
+    color: #8b1554;
+    margin-top: 25px;
+}
+
+/* Listas con ícono */
+ul li::before {
+    content: "🌸 ";
+}
+
+/* Párrafos */
+p {
+    line-height: 1.5;
+}
+
+/* Imagen de portada adicional */
+.main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Imagen de perfil */
+.profile-image {
+    display: block;
+    max-width: 200px;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+}
+
+/* Información de contacto */
+.contact-info {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 15px 0;
+}
+
+.contact-info div {
+    background-color: #ffe4e1;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Responsive para celular */
+@media screen and (max-width: 600px) {
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        padding: 20px;
+        font-size: 16px;
+    }
+}
+
